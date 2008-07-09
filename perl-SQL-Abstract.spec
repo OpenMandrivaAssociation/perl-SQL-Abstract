@@ -1,6 +1,6 @@
 %define module	SQL-Abstract
 %define name	perl-%{module}
-%define version 1.22
+%define version 1.23
 %define release %mkrel 1
 
 Name:		%{name}
@@ -9,13 +9,10 @@ Release:	%{release}
 summary:	Generate SQL from Perl data structures
 license:	Artistic
 group:		Development/Perl
-source:		http://search.cpan.org/CPAN/authors/id/N/NW/NWIGER/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
-buildroot:	%{_tmppath}/%{name}-%{version}
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
+Source:     http://www.cpan.org/modules/by-module/SQL/%{module}-%{version}.tgz
 buildarch:	noarch
+buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module was inspired by the excellent L<DBIx::Abstract>.
@@ -24,7 +21,7 @@ to do was generate SQL, but still retain complete control over my
 statement handles and use the DBI interface. So, I set out to
 create an abstract SQL generation module.
 
-While based on the concepts used by L<DBIx::Abstract>, there are
+While based on the concepts used by DBIx::Abstract, there are
 several important differences, especially when it comes to WHERE
 clauses. I have modified the concepts used to make the SQL easier
 to generate from Perl data structures and, IMO, more intuitive.

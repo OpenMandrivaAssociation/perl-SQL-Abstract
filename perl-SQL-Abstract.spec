@@ -1,6 +1,6 @@
 %define module	SQL-Abstract
 %define name	perl-%{module}
-%define version 1.23
+%define version 1.24
 %define release %mkrel 1
 
 Name:		%{name}
@@ -10,7 +10,7 @@ summary:	Generate SQL from Perl data structures
 license:	Artistic
 group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/SQL/%{module}-%{version}.tgz
+Source:     http://www.cpan.org/modules/by-module/SQL/%{module}-%{version}.tar.gz
 buildarch:	noarch
 buildroot:	%{_tmppath}/%{name}-%{version}
 

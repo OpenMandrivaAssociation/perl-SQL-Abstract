@@ -1,6 +1,6 @@
 %define module	SQL-Abstract
 %define name	perl-%{module}
-%define version 1.24
+%define version 1.50
 %define release %mkrel 1
 
 Name:		%{name}
@@ -49,7 +49,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README Changes
+%doc Changes
 %{perl_vendorlib}/SQL
 %{_mandir}/*/*
 

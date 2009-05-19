@@ -11,6 +11,7 @@ license:	Artistic
 group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/SQL/%{module}-%{version}.tar.gz
+buildRequires:	perl(Clone)
 buildRequires:	perl(Test::Warn)
 buildRequires:	perl(Test::Deep)
 buildRequires:	perl(Test::Exception)

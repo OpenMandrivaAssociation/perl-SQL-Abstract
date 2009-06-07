@@ -1,6 +1,6 @@
 %define module	SQL-Abstract
 %define name	perl-%{module}
-%define version 1.55
+%define version 1.56
 %define release %mkrel 1
 
 Name:		%{name}

@@ -1,22 +1,22 @@
-%define module	SQL-Abstract
-%define name	perl-%{module}
-%define version 1.56
-%define release %mkrel 1
+%define upstream_name	 SQL-Abstract
+%define upstream_version 1.56
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-summary:	Generate SQL from Perl data structures
-license:	Artistic
-group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/SQL/%{module}-%{version}.tar.gz
-buildRequires:	perl(Clone)
-buildRequires:	perl(Test::Warn)
-buildRequires:	perl(Test::Deep)
-buildRequires:	perl(Test::Exception)
-buildarch:	noarch
-buildroot:	%{_tmppath}/%{name}-%{version}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	Generate SQL from Perl data structures
+License:	Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/SQL/%{upstream_name}-%{upstream_version}.tar.gz
+
+BuildRequires:	perl(Clone)
+BuildRequires:	perl(Test::Warn)
+BuildRequires:	perl(Test::Deep)
+BuildRequires:	perl(Test::Exception)
+BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module was inspired by the excellent L<DBIx::Abstract>.
@@ -35,7 +35,7 @@ you don't have to modify your code every time your data changes,
 as this module figures it out.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -56,4 +56,3 @@ rm -rf %{buildroot}
 %doc Changes
 %{perl_vendorlib}/SQL
 %{_mandir}/*/*
-

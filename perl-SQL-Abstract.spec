@@ -1,5 +1,5 @@
 %define upstream_name	 SQL-Abstract
-%define upstream_version 1.61
+%define upstream_version 1.62
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}

@@ -1,5 +1,5 @@
 %define upstream_name	 SQL-Abstract
-%define upstream_version 1.67
+%define upstream_version 1.71
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -54,5 +54,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc Changes
-%{perl_vendorlib}/SQL
+%{perl_vendorlib}/*
+%{_bindir}/*
 %{_mandir}/*/*

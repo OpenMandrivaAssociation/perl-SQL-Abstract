@@ -17,6 +17,7 @@ BuildRequires:	perl(Test::Warn)
 BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Hash::Merge)
+BuildRequires:	perl(Getopt::Long::Descriptive)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 

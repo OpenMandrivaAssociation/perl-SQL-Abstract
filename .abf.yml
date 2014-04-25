@@ -1,2 +1,4 @@
+removed_sources:
+  SQL-Abstract-1.72.tar.gz: a1a209ea55d8371bc9905a36605ca5c05dff1fa3
 sources:
-  "SQL-Abstract-1.72.tar.gz": a1a209ea55d8371bc9905a36605ca5c05dff1fa3
+  SQL-Abstract-1.77.tar.gz: be86d3321d9d84333cc24653d698ffb99aa232d0

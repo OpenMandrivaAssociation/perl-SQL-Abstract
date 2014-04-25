@@ -63,5 +63,23 @@ make test
 %{perl_vendorlib}/*
 %{_bindir}/*
 %{_mandir}/*/*
+%{_libdir}/debug/.build-id/ca/1d443a8937d368a6b31c35e7f52a9b5729419f
+%{_libdir}/debug/.build-id/ca/1d443a8937d368a6b31c35e7f52a9b5729419f.debug
+%{_libdir}/debug/.build-id/ce/1f106de4a582f65ad6350374cfaf3a57c8c427
+%{_libdir}/debug/.build-id/ce/1f106de4a582f65ad6350374cfaf3a57c8c427.debug
+%{_libdir}/debug/usr/lib/perl5/site_perl/5.16.3/i386-linux-thread-multi/auto/Class/XSAccessor/XSAccessor.so.debug
+%{_libdir}/debug/usr/lib/perl5/site_perl/5.16.3/i386-linux-thread-multi/auto/Sub/Name/Name.so.debug
+%{_libdir}/perl5/site_perl/5.16.3/Class/Accessor/Grouped.pm
+%{_libdir}/perl5/site_perl/5.16.3/i386-linux-thread-multi/Class/XSAccessor.pm
+%{_libdir}/perl5/site_perl/5.16.3/i386-linux-thread-multi/Class/XSAccessor/Array.pm
+%{_libdir}/perl5/site_perl/5.16.3/i386-linux-thread-multi/Class/XSAccessor/Heavy.pm
+%{_libdir}/perl5/site_perl/5.16.3/i386-linux-thread-multi/Sub/Name.pm
+%{_libdir}/perl5/site_perl/5.16.3/i386-linux-thread-multi/auto/Class/XSAccessor/XSAccessor.so
+%{_libdir}/perl5/site_perl/5.16.3/i386-linux-thread-multi/auto/Sub/Name/Name.so
+/usr/local/share/man/man3/Class::Accessor::Grouped.3pm
+/usr/local/share/man/man3/Class::XSAccessor.3pm
+/usr/local/share/man/man3/Class::XSAccessor::Array.3pm
+/usr/local/share/man/man3/Class::XSAccessor::Heavy.3pm
+/usr/local/share/man/man3/Sub::Name.3pm
 
 

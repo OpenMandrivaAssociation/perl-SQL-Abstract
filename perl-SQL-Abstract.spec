@@ -19,6 +19,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/SQL/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Devel::GlobalDestruction)
 BuildRequires: perl(Sub::Exporter::Progressive)
 BuildRequires: perl(strictures)
 BuildRequires: perl(Test::Fatal)

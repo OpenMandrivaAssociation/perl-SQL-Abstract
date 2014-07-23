@@ -1,5 +1,5 @@
 %define upstream_name	 SQL-Abstract
-%define upstream_version 1.77
+%define upstream_version 1.78
 
 # We need this to avoid circular deps
 %if %{_use_internal_dependency_generator}
@@ -16,7 +16,7 @@ Summary:	Generate SQL from Perl data structures
 License:	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/SQL/SQL-Abstract-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/SQL/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Clone)

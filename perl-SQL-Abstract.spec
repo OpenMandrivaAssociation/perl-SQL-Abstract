@@ -19,6 +19,8 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/SQL/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::Fatal)
+BuildRequires: perl(Moo)
 BuildRequires:	perl(Clone)
 BuildRequires:	perl(Class::Accessor::Grouped)
 BuildRequires:	perl(Test::Warn)
